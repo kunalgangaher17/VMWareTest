@@ -37,7 +37,7 @@ public class AreaController {
 			else if(type.equalsIgnoreCase(ShapeConstants.CIRCLE))
 			{
 				int radius=(int)property.get(AreaPropertyConstants.RADIUS);
-				double areaCircle=(AreaPropertyConstants.PI)*(radius*radius);
+				double areaCircle=(3.142)*(radius*radius);
 				result.put(String.valueOf(element), String.valueOf(areaCircle));
 			}
 			else if(type.equalsIgnoreCase(ShapeConstants.SQUARE))

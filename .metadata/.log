@@ -468,3 +468,15 @@ java.lang.InterruptedException
 
 !ENTRY Activator 1 0 2021-08-16 18:12:23.636
 !MESSAGE Has main method computation for project 'Test'
+
+!ENTRY Activator 1 0 2021-08-16 18:14:13.131
+!MESSAGE Has main method computation for project 'Test'
+
+!ENTRY Activator 1 0 2021-08-16 18:14:13.787
+!MESSAGE Has main method computation for project 'Test'
+
+!ENTRY Activator 1 0 2021-08-16 18:14:35.462
+!MESSAGE Has main method computation for project 'Test'
+
+!ENTRY Activator 1 0 2021-08-16 18:14:36.115
+!MESSAGE Has main method computation for project 'Test'
