@@ -27,20 +27,20 @@ public class AreaController {
 		{
 			Map<String,Object> property=areaProperties.get(String.valueOf(element));
 			String type=(String)property.get(AreaPropertyConstants.TYPE);
-			if(type.equalsIgnoreCase(ShapeConstants.RECTANGLE))
+			if(type.equalsIgnoreCase("rectangle"))
 			{
 				int length=(int)property.get(AreaPropertyConstants.LENGTH);
 				int breadth=(int)property.get(AreaPropertyConstants.BREADTH);
 				long areaRectangle=(length*breadth);
 				result.put(String.valueOf(element), String.valueOf(areaRectangle));
 			}
-			else if(type.equalsIgnoreCase(ShapeConstants.CIRCLE))
+			else if(type.equalsIgnoreCase("circle"))
 			{
 				int radius=(int)property.get(AreaPropertyConstants.RADIUS);
 				double areaCircle=(3.142)*(radius*radius);
 				result.put(String.valueOf(element), String.valueOf(areaCircle));
 			}
-			else if(type.equalsIgnoreCase(ShapeConstants.SQUARE))
+			else if(type.equalsIgnoreCase("square"))
 			{
 				int side=(int)property.get(AreaPropertyConstants.SIDE);
 				long areaSquare=(side*side);
