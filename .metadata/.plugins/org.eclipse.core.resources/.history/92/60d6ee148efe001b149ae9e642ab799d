@@ -13,6 +13,7 @@ public class AreaController {
 	@PostMapping("/calculate")
 	public Response calculateArea(@RequestBody Map<String,Map<String,Object>> areaProperties)
 	{
+		System.out.println("Inside :"+areaProperties.size());
 		int element=1;
 		Response response=new Response();
 		Map<String,String> result=new HashMap<>();
@@ -29,20 +30,20 @@ public class AreaController {
 			String type=(String)property.get("type");
 			if(type.equalsIgnoreCase("rectangle"))
 			{
-				int length=(int)property.get(AreaPropertyConstants.LENGTH);
-				int breadth=(int)property.get(AreaPropertyConstants.BREADTH);
+				int length=(int)property.get("l");
+				int breadth=(int)property.get("b");
 				long areaRectangle=(length*breadth);
 				result.put(String.valueOf(element), String.valueOf(areaRectangle));
 			}
 			else if(type.equalsIgnoreCase("circle"))
 			{
-				int radius=(int)property.get(AreaPropertyConstants.RADIUS);
+				int radius=(int)property.get("radius");
 				double areaCircle=(3.142)*(radius*radius);
 				result.put(String.valueOf(element), String.valueOf(areaCircle));
 			}
 			else if(type.equalsIgnoreCase("square"))
 			{
-				int side=(int)property.get(AreaPropertyConstants.SIDE);
+				int side=(int)property.get("side");
 				long areaSquare=(side*side);
 				result.put(String.valueOf(element), String.valueOf(areaSquare));				
 			}
