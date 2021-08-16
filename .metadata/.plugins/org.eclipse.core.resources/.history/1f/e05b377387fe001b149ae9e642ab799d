@@ -1,0 +1,12 @@
+package com.vmware.test;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class AreaController {
+
+	public Response calculateArea()
+	{
+		
+	}
+}
